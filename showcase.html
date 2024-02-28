@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="showcase.css" />
+  <title>Features showcase</title>
+</head>
+
+<body>
+  <!-- Hyperlink -->
+  <div id="example">
+    <a href="http://example.com">Hyperlink</a>
+  </div>
+
+  <!-- Nested blocks -->
+  <div class="parent">
+    Parent
+    <div class="child">Child 1</div>
+    <div class="child">
+      Child 2
+      <div class="child">Child 2.1</div>
+    </div>
+  </div>
+
+  <!-- Picture -->
+  <div>
+    <img src="https://shop.burnettdairy.com/cdn/shop/products/BD_MildChed.jpg?v=1589903792"
+      style="width: 400px; height: 300px" />
+  </div>
+
+  <!-- Text with headers -->
+  <div>
+    <h1>Cheese</h1>
+    <p>Cheddar cheese</p>
+  </div>
+
+  <!-- Special symbols -->
+  <div>Cheddar is for a reasonable price of 380&#8372 for kg</div><br>
+
+  <!-- Table -->
+  <div>
+    <table class="info">
+      <tr>
+        <th></th>
+        <th>Chesse</th>
+        <th>Cigarettes</th>
+      </tr>
+      <tr>
+        <th>Tasty</th>
+        <td>✅</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <th>Healthy</th>
+        <td>✅</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <th>Smells good</th>
+        <td>✅</td>
+        <td>❌</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Lists -->
+  <div>
+    <div>
+      <ul>
+        <li>Cheddar</li>
+        <li>Mozzarella</li>
+        <li>Camembert</li>
+      </ul>
+    </div>
+    <div>
+      <ol>
+        <li>Cheddar</li>
+        <li>Mozzarella</li>
+        <li>Camembert</li>
+      </ol>
+    </div>
+    <dl>
+      <dt>Cheddar</dt>
+      <dd>Cheddar is a hard, ripened cheese.</dd>
+      <dt>Mozzarella</dt>
+      <dd>Mozzarella is a traditionally southern Italian cheese made from Italian buffalo's milk by the pasta filata
+        method.</dd>
+      <dt>Camembert</dt>
+      <dd>Camembert is a moist, soft, creamy, surface-ripened cow's milk cheese.</dd>
+    </dl>
+  </div>
+
+  <!-- Form -->
+  <div>
+    <form>
+      <input type="text" placeholder="Name" />
+      <input type="email" placeholder="Email to subscribe the weekly cheese newsletter" />
+      <input type=number placeholder="Age" />
+      <input type="textarea" placeholder="Tell us a bit about yourself" /><br>
+      <input type = "checkbox" name = "cheeseStatus" value = "True"> I love cheese<br>
+      <label for="favoriteCheese" >What is your favorite cheese?</label>
+      <select id = "cheeseType" name = "cheeseType">
+        <option value = "Cheddar">Cheddar</option>
+        <option value = "Mozzarella">Mozzarella</option>
+        <option value = "Camembert">Camembert</option>
+        <option value = "Other">Other</option>
+      </select> <br>
+      <label for="date">When did you last eat cheese?</label>
+      <input type="date" id="date" name="date">
+      <input type="reset" value="Reset">
+    </form>
+  </div>
+</body>
+
+</html>

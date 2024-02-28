@@ -1,0 +1,48 @@
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 3px;
+  text-align: center;
+}
+
+#example {
+  text-align: center;
+}
+
+.parent {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  background-color: greenyellow;
+}
+
+.child {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  background-color: mediumspringgreen;
+}
+
+.child .child {
+  background-color: lightcoral;
+}
+
+img {
+  box-shadow: 10px 10px 5px #888888;
+}
+
+table.info {
+  width: 50%;
+  height: 50%;
+}
+
+th {
+  color: #181818ea;
+  text-decoration: underline;
+}
+
+dt {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
