@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey</title>
+</head>
+
+<body>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('body').insertAdjacentHTML('afterbegin', data))
+            .catch(error => console.error('Error fetching header:', error));
+    </script>
+
+    <form id="surveyForm">
+        <div class="survey-field">
+            <label for="name" class="form-label">Tell us your name</label>
+            <input type="text" id="name" name="name" class="form-input" required>
+        </div>
+        <div class="survey-field">
+            <label for="age" class="form-label">How much hours per week do you usually spend playing chess?</label>
+            <input type="number" id="age" name="age" class="form-input" required>
+        </div>
+        <div class="survey-field">
+            <label for="skill" class="form-label">How would you describe your chess skill level?</label>
+            <select id="skill" name="skill" class="form-input" required>
+                <option value="noob">This all is new to me</option>
+                <option value="intermediate">I play chess for a while and know basics</option>
+                <option value="advanced">I'm stronger chess player than average people</option>
+                <option value="master">I'm a proffesional chess player</option>
+            </select>
+        </div>
+        <div class="survey-field">
+            <label class="form-label">How did you find out about our website?</label>
+            <div class="radiobox">
+                <input type="radio" id="social-media" name="source" value="Social-media" required>
+                <label for="social-media">I saw an ad in social medias</label>
+            </div>
+            <div class="radiobox">
+                <input type="radio" id="friend" name="source" value="Friend" required>
+                <label for="friend">My friend told me about this website</label>
+            </div>
+            <div class="radiobox">
+                <input type="radio" id="search-engine" name="source" value="Search-engine" required>
+                <label for="search-engine">I found it through a search engine</label>
+            </div>
+            <div class="radiobox">
+                <input type="radio" id="other" name="source" value="Other" required>
+                <label for="other">Other</label>
+            </div>
+        </div>
+        <div class="survey-field">
+            <label for="feedback" class="form-label">Please provide any feedback or suggestions:</label>
+            <textarea id="feedback" name="feedback" class="form-input" rows="4" required></textarea>
+        </div>
+        <div class="survey-field">
+            <label class="form-label">Which operating system do you primarily use?</label>
+            <div class="checkbox">
+                <input type="checkbox" id="os-windows" name="os" value="Windows">
+                <label for="os-windows">Windows</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="os-macos" name="os" value="MacOS">
+                <label for="os-macos">MacOS</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="os-linux" name="os" value="Linux">
+                <label for="os-linux">Linux</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="os-android" name="os" value="Android">
+                <label for="os-android">Android</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="os-ios" name="os" value="iOS">
+                <label for="os-ios">iOS</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="os-other" name="os" value="Other">
+                <label for="os-other">Other</label>
+            </div>
+        </div>
+        <div class="survey-field">
+            <label for="birthday" class="form-label">When is your birthday?</label>
+            <input type="date" id="birthday" name="birthday" class="form-input" required>
+        </div>
+
+
+        <div class="survey-field">
+            <label for="email" class="form-label">Leave your email if you'd like to recieve newsletter from
+                us</label>
+            <p>You can leave this one blank</p>
+            <input type="email" id="email" name="email" class="form-input" required>
+        </div>
+        <div class="survey-field">
+            <label for="feedback" class="form-label">Please provide any feedback or suggestions:</label>
+            <textarea id="feedback" name="feedback" class="form-input" rows="4" required></textarea>
+        </div>
+        <div class="survey-field">
+            <label class="form-label">On a scale of 1 to 5, how user-friendly do you find our website?</label>
+            <input type="range" id="user-friendly" name="user-friendly" class="form-input" min="1" max="5" step="1"
+                required>
+        </div>
+
+
+    </form>
+</body>
+
+</html>

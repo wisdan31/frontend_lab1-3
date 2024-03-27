@@ -9,18 +9,13 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/knight.png" alt="Your Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
-    </header>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('body').insertAdjacentHTML('afterbegin', data))
+            .catch(error => console.error('Error fetching header:', error));
+    </script>
+
     <div class="container">
         <button class="button main" id="playChess">
             <h1>Play chess</h1>
@@ -37,7 +32,7 @@
     </div>
 
     <div class="news" id="news">
-        <h1>Latest news</h1>
+        <h1>Chess world news</h1>
         <article>
             <h2>Breaking News</h2>
             <p>Chess.com is the best place to play chess online with friends and the best place to learn chess.</p>
@@ -45,6 +40,14 @@
         <article>
             <h2>New Champion</h2>
             <p>Wesley So is the new World Champion. He won the title by defeating Magnus Carlsen in the final match.</p>
+        </article>
+    </div>
+
+    <div class="news" id="site-news">
+        <h1>Site news</h1>
+        <article>
+            <h2>Take the survey</h2>
+            <p>Help us to understand our audience by <a href="survey.html">taking a short survey</a>.</p>
         </article>
     </div>
 </body>
