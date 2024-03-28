@@ -12,6 +12,21 @@ body {
   justify-content: center;
 }
 
+.results {
+  border: 3px solid #f5f5f5;
+}
+
+.results .entry{
+  border: 2px dotted #6f6f6f;
+  margin: 10px;
+}
+
+.results h1, h2 {
+  margin: 15px;
+}
+
+
+
 button.main {
   background-color: #1f1f1f;
   color: #f5f5f5;
