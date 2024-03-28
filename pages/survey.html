@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>Survey</title>
 </head>
 
@@ -101,14 +101,12 @@
             <input type="range" id="user-friendly" name="user-friendly" class="form-input" min="1" max="5" step="1"
                 required>
         </div>
+        <button id="submit" class="default" style="color: mediumspringgreen">Submit</button>
 
-        <input type="reset" value="Reset" class="button"
-            style="background-color: #1f1f1f; color: #f5f5f5; display: block; margin: 0 auto;">
+        <input type="reset" value="Reset" class="default" style="color: #ff9999">
     </form>
-    <button id="submit" class="button"
-        style="background-color: #1f1f1f; color: #f5f5f5; display: block; margin: 0 auto;">Submit</button>
 
 </body>
-<script src="surveyEvents.js"></script>
+<script src="../scripts/surveyEvents.js"></script>
 
 </html>

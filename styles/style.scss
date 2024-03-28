@@ -57,15 +57,15 @@ button.main:hover::before {
 }
 
 #playChess {
-  background: url(images/playChess.png) no-repeat right / cover #2f2f2f;
+  background: url(../assets/images/playChess.png) no-repeat right / cover #2f2f2f;
 }
 
 #learnChess {
-  background: url(images/learnChess.png) no-repeat right / cover #2f2f2f;
+  background: url(../assets/images/learnChess.png) no-repeat right / cover #2f2f2f;
 }
 
 #puzzles {
-  background: url(images/puzzles.png) no-repeat right / cover #2f2f2f;
+  background: url(../assets/images/puzzles.png) no-repeat right / cover #2f2f2f;
 }
 
 button.main h1,
@@ -149,6 +149,18 @@ nav {
 
 .radiobox {
   margin: 10px;
+}
+
+button.default, input.default {
+  background-color: $primary-color;
+  color: $text-color;
+  width: 30%; 
+  padding: 15px; 
+  border: 1px solid $text-color;
+  border-radius: 6px; 
+  cursor: pointer;
+  margin: 20px auto; // Changed this line
+  display: block; // Added this line
 }
 
 @media screen and (max-width: 768px) {
