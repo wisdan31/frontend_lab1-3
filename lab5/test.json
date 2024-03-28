@@ -1,0 +1,110 @@
+{
+  "testname": "Capitals quiz",
+  "questions": [
+    {
+      "question": "What is the capital of France?",
+      "answers": [
+        {
+          "answer": "Paris",
+          "correct": true
+        },
+        {
+          "answer": "London",
+          "correct": false
+        },
+        {
+          "answer": "Berlin",
+          "correct": false
+        },
+        {
+          "answer": "Madrid",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the capital of Germany?",
+      "answers": [
+        {
+          "answer": "Paris",
+          "correct": false
+        },
+        {
+          "answer": "London",
+          "correct": false
+        },
+        {
+          "answer": "Berlin",
+          "correct": true
+        },
+        {
+          "answer": "Madrid",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the capital of Spain?",
+      "answers": [
+        {
+          "answer": "Paris",
+          "correct": false
+        },
+        {
+          "answer": "London",
+          "correct": false
+        },
+        {
+          "answer": "Berlin",
+          "correct": false
+        },
+        {
+          "answer": "Madrid",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "What is the capital of Japan?",
+      "answers": [
+        {
+          "answer": "Tokyo",
+          "correct": true
+        },
+        {
+          "answer": "Beijing",
+          "correct": false
+        },
+        {
+          "answer": "Seoul",
+          "correct": false
+        },
+        {
+          "answer": "Bangkok",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the capital of Brazil?",
+      "answers": [
+        {
+          "answer": "Buenos Aires",
+          "correct": false
+        },
+        {
+          "answer": "Sao Paulo",
+          "correct": false
+        },
+        {
+          "answer": "Rio de Janeiro",
+          "correct": false
+        },
+        {
+          "answer": "Brasilia",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}
