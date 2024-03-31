@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Basic Snake HTML Game</title>
+  <meta charset="UTF-8">
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      background: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: white;
+    }
+
+    canvas {
+      border: 1px solid white;
+    }
+
+    #score {
+      margin-bottom: 10px;
+    }
+
+    #highScores,
+    #lowScores {
+      margin: 10px 0;
+    }
+
+    #leaderboards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    .leaderboard {
+      margin: 0 10px;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas width="400" height="400" id="game"></canvas>
+  <div id="score"></div>
+  <div id="leaderboards">
+    <div class="leaderboard">
+      <h2>Top 3 High Scores:</h2>
+      <ul id="highScores"></ul>
+    </div>
+    <div class="leaderboard">
+      <h2>Top 3 Low Scores:</h2>
+      <ul id="lowScores"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
