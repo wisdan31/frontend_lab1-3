@@ -1,4 +1,3 @@
-// surveyAnalysis.js
 document.addEventListener('DOMContentLoaded', function () {
     var surveyResults = JSON.parse(localStorage.getItem('surveyResults')) || [];
     var chessPlayers = surveyResults.filter(function (result) {
